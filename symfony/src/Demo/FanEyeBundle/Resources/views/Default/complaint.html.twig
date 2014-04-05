@@ -1,0 +1,44 @@
+{% extends 'DemoFanEyeBundle::layout.html.twig' %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <div class="container">
+        <h1>?#@*&amp;%!!</h1>
+        <h4>Your favorite sci-fi show isn't number one? Submit your rational argument below.</h4>
+        <p>All complaints will be handled immediately by our customer service representative D&egrave;v N&uuml;ll</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-6">
+            {{ form_start(form) }}
+                {{ form_errors(form) }}
+
+                <div class="form-group">
+                    {{ form_label(form.name) }}
+                    {{ form_errors(form.name) }}
+                    {{ form_widget(form.name, {'attr': {'class': 'form-control'}}) }}
+                </div>
+                <div class="form-group">
+                    {{ form_label(form.email) }}
+                    {{ form_errors(form.email) }}
+                    {{ form_widget(form.email, {'attr': {'class': 'form-control'}}) }}
+                </div>
+                <div class="form-group">
+                    {{ form_label(form.rationalArgument) }}
+                    {{ form_errors(form.rationalArgument) }}
+                    {{ form_widget(form.rationalArgument, {'attr': {'class': 'form-control'}}) }}
+                </div>
+            {{ form_widget(form.save, {'attr': {'class': 'btn btn-default'}}) }}
+            {{ form_end(form) }}
+            {#{{ form(form) }}#}
+        </div>
+        <div class="col-md-3">
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,19 @@
+<div class="row candidates">
+    <div class="col-md-5">
+        <h3>{{ candidates.0.name }}</h3>
+        <h5>({{ candidates.0.year }})</h5>
+        <img class="cover" src="{{ asset('images/') }}{{ candidates.0.image }}">
+        <p>{{  candidates.0.description }}</p>
+        <a class="btn btn-primary btn-lg" href="{{ path('demo_fan_eye_default_vote', {'winnerId': candidates.0.id, 'loserId': candidates.1.id}) }}" role="button">This one is better</a>
+    </div>
+    <div class="col-md-2">
+        <h1><br><br>vs</h1>
+    </div>
+    <div class="col-md-5">
+        <h3>{{ candidates.1.name }}</h3>
+        <h5>({{ candidates.1.year }})</h5>
+        <img class="cover" src="{{ asset('images/') }}{{ candidates.1.image }}">
+        <p>{{  candidates.1.description }}</p>
+        <a class="btn btn-primary btn-lg" href="{{ path('demo_fan_eye_default_vote', {'winnerId': candidates.1.id, 'loserId': candidates.0.id}) }}" role="button">This one is better</a>
+    </div>
+</div>

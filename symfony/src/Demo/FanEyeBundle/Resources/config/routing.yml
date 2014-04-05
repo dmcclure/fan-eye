@@ -1,0 +1,17 @@
+demo_fan_eye_default_index:
+    path:  /
+    defaults: { _controller: DemoFanEyeBundle:Default:index }
+
+demo_fan_eye_default_vote:
+    path:  /vote/{winnerId}/{loserId}
+    defaults: { _controller: DemoFanEyeBundle:Default:vote }
+
+demo_fan_eye_default_about:
+    pattern:  /about
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: DemoFanEyeBundle:Default:about.html.twig
+
+demo_fan_eye_default_complaint:
+    pattern:  /complaint
+    defaults: { _controller: DemoFanEyeBundle:Default:complaint }

@@ -1,0 +1,11 @@
+{% extends 'DemoFanEyeBundle::layout.html.twig' %}
+
+{% block content %}
+    <div class="jumbotron">
+        <div class="container">
+            <h4>Thanks for voting! Your vote to pick <b>{{ winner.name }}</b> over <b>{{ loser.name }}</b> matches <b>{{ pctMatch }}%</b> of other voters.<br><br>Here are two more to choose from:</h4>
+            {% include 'DemoFanEyeBundle:Default:candidates.html.twig' %}
+        </div>
+    </div>
+    {% include 'DemoFanEyeBundle:Default:top5.html.twig' %}
+{% endblock %}

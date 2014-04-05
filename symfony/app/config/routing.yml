@@ -1,0 +1,4 @@
+demo_fan_eye:
+    resource: "@DemoFanEyeBundle/Resources/config/routing.yml"
+    prefix:   /
+

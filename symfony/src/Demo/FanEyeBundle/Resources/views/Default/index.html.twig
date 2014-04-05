@@ -1,0 +1,12 @@
+{% extends 'DemoFanEyeBundle::layout.html.twig' %}
+
+{% block content %}
+    <div class="jumbotron">
+        <div class="container">
+            <h1>It's time to vote!</h1>
+            <h4>Select which of the two sci-fi series below is better:</h4>
+            {% include 'DemoFanEyeBundle:Default:candidates.html.twig' %}
+        </div>
+    </div>
+    {% include 'DemoFanEyeBundle:Default:top5.html.twig' %}
+{% endblock %}

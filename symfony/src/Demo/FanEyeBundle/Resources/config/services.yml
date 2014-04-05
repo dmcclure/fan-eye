@@ -1,0 +1,7 @@
+parameters:
+#    demo_fan_eye.example.class: Demo\FanEyeBundle\Example
+
+services:
+#    demo_fan_eye.example:
+#        class: %demo_fan_eye.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
